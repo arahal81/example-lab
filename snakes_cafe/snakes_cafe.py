@@ -36,7 +36,7 @@ while True:
         break;
     for i in menu:
         for j in menu[i]:
-            if j==user_input:
+            if j.upper()==user_input.upper():
                 is_exist=True;
                 menu[i][j]+=1;
                 print(f" ** {menu[i][j]} orders of {user_input} have been added to your meal ** ");
